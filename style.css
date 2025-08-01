@@ -1,0 +1,155 @@
+/* Importar fonte elegante */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&display=swap');
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #0a0a0a;
+  color: #d1d5db;
+}
+
+/* Título principal */
+h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Cores principais */
+:root {
+  --azul: #3b82f6;
+  --azul-claro: #60a5fa;
+  --cinza-escuro: #111827;
+}
+
+/* Header */
+header {
+  background-color: #0a0a0a;
+  border-bottom: 1px solid #1f2937;
+}
+
+/* Links */
+a {
+  color: var(--azul);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--azul-claro);
+}
+
+/* Botões */
+button {
+  background-color: var(--azul);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--azul-claro);
+}
+
+/* Cards lado a lado */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.card {
+  background-color: var(--cinza-escuro);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.1);
+  max-width: 300px;
+  flex: 1 1 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.25);
+}
+.card h4 {
+  color: var(--azul-claro);
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  background-color: #111827;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+#tecnologias{
+  margin-top: 50px;
+}
+
+.animate-spin-slow {
+    animation: spin 10s linear infinite;
+}
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Spin contínuo (usado para React) */
+.spin-slow {
+  animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Pulso suave (usado para JavaScript, GitHub) */
+.pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+}
+
+/* Balanço (usado para HTML, Node) */
+.wiggle {
+  animation: wiggle 1.5s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+}
+
+/* Pulo suave (usado para CSS, Linux) */
+.bounce {
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+
